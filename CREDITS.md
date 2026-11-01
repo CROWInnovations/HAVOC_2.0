@@ -1,4 +1,14 @@
-# Credits
+# Credits & Attribution (`GPL-3.0`)
+
+## Original Author & Upstream Project
+- **[C5pider](https://github.com/C5pider) ([`@C5pider`](https://twitter.com/C5pider))** — Creator and lead developer of **[The Havoc Framework](https://github.com/HavocFramework/Havoc)**.
+
+## `HAVOC 2.0` Toolchain & GCC 16 Modernization (2026)
+- **[CROW Innovations](https://CROWinnovations.com) ([`CROWInnovations/HAVOC_2.0`](https://github.com/CROWInnovations/HAVOC_2.0))** — Upgraded the build pipeline, Go Teamserver payload builder, Demon (`x64`/`x86`) implant compilation, C++20 Qt5/Qt6 client configuration, and multi-compiler CI verification harness for modern GCC 13–16 and MinGW-w64 toolchains (modified July–November 2026 under GNU GPL v3.0 Section 5).
+
+---
+
+## Original Upstream Credits
 
 In this file i give credits to those people who helped on the original HAVOC project.
 
