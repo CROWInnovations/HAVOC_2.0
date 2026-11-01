@@ -1,6 +1,6 @@
 # Credits
 
-In this file i give credits to those people who helped me working on this project.
+In this file i give credits to those people who helped on the original HAVOC project.
 
 - [Austin Hudson](https://twitter.com/ilove2pwn_) 
     A lot of the code and ideas are based on his projects. Foliage is one of the sleep obfuscation techniques used by the havoc agent.
