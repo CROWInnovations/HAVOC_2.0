@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101d" />
+      <stop offset="100%" stop-color="#131b2e" />
+    </linearGradient>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#ff2a3d" />
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="280" rx="12" fill="url(#archBg)" stroke="#334155" stroke-width="1.5" />
+  <text x="36" y="36" font-family="Orbitron, Inter, sans-serif" font-size="16" font-weight="800" fill="#f8fafc" letter-spacing="1">HAVOC 2.0 ARCHITECTURE &amp; MODERNIZED GCC 16 BUILD PIPELINE</text>
+
+  <!-- Node 1: Operator Client -->
+  <g transform="translate(36, 66)">
+    <rect width="225" height="175" rx="10" fill="#162035" stroke="#c084fc" stroke-width="1.5" />
+    <text x="16" y="28" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#c084fc">OPERATOR CONSOLE</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Havoc C++20 Client</text>
+    <text x="16" y="74" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Qt5 / Qt6 GUI + WebSockets</text>
+    <text x="16" y="94" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• GCC 10–16 (-fpermissive)</text>
+    <text x="16" y="114" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Embedded Python 3.10+ API</text>
+    <text x="16" y="134" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Session Graph &amp; Loot Vault</text>
+    <rect x="16" y="146" width="193" height="20" rx="4" fill="#0f172a" />
+    <text x="24" y="160" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#a855f7">make client-build</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="261" y1="153" x2="313" y2="153" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrowCyan)" />
+  <text x="267" y="143" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">TLS WS</text>
+
+  <!-- Node 2: Go Teamserver -->
+  <g transform="translate(320, 66)">
+    <rect width="245" height="175" rx="10" fill="#162035" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="16" y="28" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#38bdf8">C2 CORE &amp; BUILDER</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Go Teamserver</text>
+    <text x="16" y="74" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Malleable YAOTL Profiles</text>
+    <text x="16" y="94" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• HTTP/S, SMB &amp; ExternalC2</text>
+    <text x="16" y="114" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• SOCKS4/4a/5 Proxy Pivoting</text>
+    <text x="16" y="134" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Non-Root cap_net_bind_service</text>
+    <rect x="16" y="146" width="213" height="20" rx="4" fill="#0f172a" />
+    <text x="24" y="160" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#38bdf8">make ts-build</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="565" y1="153" x2="617" y2="153" stroke="#ff2a3d" stroke-width="2.2" marker-end="url(#arrowRed)" />
+  <text x="570" y="143" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff2a3d">MinGW</text>
+
+  <!-- Node 3: Payload Compiler Pipeline -->
+  <g transform="translate(624, 66)">
+    <rect width="215" height="175" rx="10" fill="#162035" stroke="#ff2a3d" stroke-width="1.5" />
+    <text x="16" y="28" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#ff2a3d">CROSS-COMPILER (GCC 16)</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Implant Factory</text>
+    <text x="16" y="74" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• x86_64 / i686 mingw-w64</text>
+    <text x="16" y="94" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• -std=gnu17 -fpermissive</text>
+    <text x="16" y="114" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• NASM win64 / win32 ASM</text>
+    <text x="16" y="134" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• EXE, Reflective DLL, Raw Bin</text>
+    <rect x="16" y="146" width="183" height="20" rx="4" fill="#0f172a" />
+    <text x="24" y="160" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#fca5a5">verify-demon-compile.sh</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="839" y1="153" x2="883" y2="153" stroke="#ff2a3d" stroke-width="2.2" marker-end="url(#arrowRed)" />
+
+  <!-- Node 4: Demon Implant -->
+  <g transform="translate(890, 66)">
+    <rect width="174" height="175" rx="10" fill="#162035" stroke="#22c55e" stroke-width="1.5" />
+    <text x="16" y="28" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#4ade80">ENDPOINT AGENT</text>
+    <text x="16" y="50" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Demon Agent</text>
+    <text x="16" y="74" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Indirect Syscalls</text>
+    <text x="16" y="94" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Sleep Mask (Ekko)</text>
+    <text x="16" y="114" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• BOF / COFF Loader</text>
+    <text x="16" y="134" font-family="Inter, sans-serif" font-size="12" fill="#cbd5e1">• Inline .NET &amp; Pivot</text>
+    <rect x="16" y="146" width="142" height="20" rx="4" fill="#0f172a" />
+    <text x="24" y="160" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#4ade80">Telemetry Harness</text>
+  </g>
+</svg>
