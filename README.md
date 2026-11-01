@@ -105,10 +105,12 @@ chmod +x test-gcc-compatibility.sh
 
 ---
 
-## 5. Documentation & Attribution
+## 5. GPL-3.0 Licensing, Original Creator Credit & Modification Notice
 
+This repository is licensed under the **GNU General Public License v3.0 ([`LICENSE`](./LICENSE))** in full compliance with **GPL-3.0 Section 5** (Conveying Modified Source Versions):
+
+- **Original Creator & Upstream Repository:** Created by **[C5pider](https://github.com/C5pider)** and the **[HavocFramework](https://github.com/HavocFramework/Havoc)** contributors (full upstream acknowledgments in [`CREDITS.md`](./CREDITS.md)).
+- **Modifications & Date (`GPL-3.0 Section 5a`):** Modified by **[CROW Innovations](https://CROWinnovations.com)** (`July 2026 – November 2026`) in [`CROWInnovations/HAVOC_2.0`](https://github.com/CROWInnovations/HAVOC_2.0) to add GCC 13–16 and modern `mingw-w64` cross-compilation compatibility, Qt5/Qt6 C++20 CMake support, automated dependency hydration, and GCC 10–16 / Demon compilation verification scripts.
 - **Full Operator & Developer Wiki:** [`WIKI.MD`](./WIKI.MD)
-- **Original Authors & Research Credits:** [`CREDITS.md`](./CREDITS.md) (Originally created by [@C5pider](https://github.com/C5pider) / [HavocFramework](https://github.com/HavocFramework/Havoc))
-- **GCC 16 & Toolchain Modernization:** [CROW Innovations](https://CROWinnovations.com) (`https://github.com/CROWInnovations/HAVOC_2.0`)
 
-> **AUTHORIZED USE DISCLAIMER:** HAVOC 2.0 is provided strictly for authorized adversary simulation, Red Team engagements, defensive telemetry validation, and security research. Users are solely responsible for obtaining explicit written authorization prior to testing any system or network.
+> **AUTHORIZED USE DISCLAIMER:** HAVOC 2.0 is provided `"AS IS"` without warranty of any kind (per GPL-3.0 Sections 15–16) strictly for authorized adversary simulation, Red Team engagements, defensive telemetry validation, and security research. Users are solely responsible for obtaining explicit written authorization prior to testing any system or network.
